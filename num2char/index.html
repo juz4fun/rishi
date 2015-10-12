@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Num-2-Char</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/darkly/bootstrap.min.css">  
+		<!-- Custom Font -->
+		<link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet" type="text/css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type = "text/css">
+		body, .text-center 
+		{
+			font: 400 20px/1 'Berkshire Swash', Helvetica, sans-serif;
+			color: white;
+			text-shadow: 0px 0px 0px #ededed, 0px04px 0px rgba(0,0,0,0);
+			text-align: center;
+		}
+		.form-control {
+			text-align: center;
+			font-size: 30px;
+			height: 60px;
+		}
+		.text-danger {
+			font-size: 30px;
+		}
+		.btn-danger {
+			float: right;
+			margin-top: 230px;
+			box-shadow: white 0px 0px 10px;
+		}
+		a, a:hover {
+			color: white;
+			text-decoration: none;
+		}
+		</style>
+	</head>
+	<body>
+	<center>
+	<div class="container-fluid">
+	<div class="jumbotron">
+		<h1 class="text-center">Number To Character</h1>
+		</div>
+<script type="text/javascript">
+var th = ['', ' Thousand', ' Million', ' Billion', ' Trillion', ' Quadrillion', ' Quintillion'];
+var dg = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+var tn = ['Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
+var tw = ['Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
+
+function update(){
+    var numString =   document.getElementById('number').value;
+    if (numString == '0') {
+        document.getElementById('container').innerHTML = 'Zero';
+        return;
+    }
+    if (numString == 0) {
+        document.getElementById('container').innerHTML = 'Enter The Digits';
+        return;
+    }
+
+    var output = toWords(numString);
+    //print the output
+    document.getElementById('container').innerHTML = output;
+}
+
+function toWords(s) {
+    s = s.toString();
+    s = s.replace(/[\, ]/g, '');
+    if (s != parseFloat(s)) return 'not a number';
+    var x = s.indexOf('.');
+    if (x == -1) x = s.length;
+    if (x > 15) return 'too big';
+    var n = s.split('');
+    var str = '';
+    var sk = 0;
+    for (var i = 0; i < x; i++) {
+        if ((x - i) % 3 == 2) {
+            if (n[i] == '1') {
+                str += tn[Number(n[i + 1])] + ' ';
+                i++;
+                sk = 1;
+            } else if (n[i] != 0) {
+                str += tw[n[i] - 2] + ' ';
+                sk = 1;
+            }
+        } else if (n[i] != 0) {
+            str += dg[n[i]] + ' ';
+            if ((x - i) % 3 == 0) str += 'hundred ';
+            sk = 1;
+        }
+        if ((x - i) % 3 == 1) {
+            if (sk) str += th[(x - i - 1) / 3] + ' ';
+            sk = 0;
+        }
+    }
+    if (x != s.length) {
+        var y = s.length;
+        str += 'point ';
+        for (var i = x + 1; i < y; i++) str += dg[n[i]] + ' ';
+    }
+    return str.replace(/\s+/g, ' ');
+}
+</script>
+
+
+<input type="text" 
+       name="" id="number" 
+       class="form-control" 
+       step="" 
+       required="required" 
+       title="" 
+       size="100" 
+       onkeyup="update();"
+       onkeydown="return (event.ctrlKey || event.altKey 
+                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
+                    || (95<event.keyCode && event.keyCode<106)
+                    || (event.keyCode==8) || (event.keyCode==9) 
+                    || (event.keyCode>34 && event.keyCode<40) 
+                    || (event.keyCode==46) )">
+                    </input>
+                    <br>
+                    <br>
+<div id="container" class="text-danger"> Enter The Digits  </div>
+<a href="https://github.com/CodeDotJS/number-to-character">
+<button type="button" class="btn btn-danger">Download Code</button>
+</a>
+
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
