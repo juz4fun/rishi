@@ -1,0 +1,272 @@
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+
+body {
+	text-align: center;
+	background-color: #111;
+}
+
+section {
+	width: 800px;
+	float: none;
+	margin: 50px auto;
+}
+
+p {
+	font-family: 'Great Vibes', serif;
+	font-size: 65px;
+	color: #111;
+	line-height: 50px;
+	display: inline-block;
+	text-align: justify;
+	margin: 20px;
+}
+
+p.one {
+	-webkit-animation: anione 30s linear infinite;
+	-moz-animation: anione 30s linear infinite;
+	-ms-animation: anione 30s linear infinite;
+	-o-animation: anione 30s linear infinite;
+	animation: anione 30s linear infinite;
+}
+
+@keyframes "anione" {
+	0%,100% {
+	color: #111;
+}
+
+5%,95% {
+	color: #3b3643;
+}
+
+10%,90% {
+	color: #897d9b;
+}
+
+15%,85% {
+	color: #9b7d99;
+}
+
+20%,80% {
+	color: #9b837d;
+}
+
+25%,75% {
+	color: #999b7d;
+}
+
+30%,70% {
+	color: #7d9b83;
+}
+
+35%,65% {
+	color: #7d909b;
+}
+
+40%,60% {
+	color: #837d9b;
+}
+ 50% {
+    color: #9b7d95;
+ }
+
+}
+
+@-moz-keyframes anione {
+	0%,100% {
+	color: #111;
+}
+
+5%,95% {
+	color: #3b3643;
+}
+
+10%,90% {
+	color: #897d9b;
+}
+
+15%,85% {
+	color: #9b7d99;
+}
+
+20%,80% {
+	color: #9b837d;
+}
+
+25%,75% {
+	color: #999b7d;
+}
+
+30%,70% {
+	color: #7d9b83;
+}
+
+35%,65% {
+	color: #7d909b;
+}
+
+40%,60% {
+	color: #837d9b;
+}
+ 50% {
+   color: #9b7d95;
+ }
+
+}
+
+@-webkit-keyframes "anione" {
+	0%,100% {
+	color: #111;
+}
+
+5%,95% {
+	color: #3b3643;
+}
+
+10%,90% {
+	color: #897d9b;
+}
+
+15%,85% {
+	color: #9b7d99;
+}
+
+20%,80% {
+	color: #9b837d;
+}
+
+25%,75% {
+	color: #999b7d;
+}
+
+30%,70% {
+	color: #7d9b83;
+}
+
+35%,65% {
+	color: #7d909b;
+}
+
+40%,60% {
+	color: #837d9b;
+}
+ 50% {
+   color: #9b7d95;
+ }
+
+}
+
+@-ms-keyframes "anione" {
+	0%,100% {
+	color: #111;
+}
+
+5%,95% {
+	color: #3b3643;
+}
+
+10%,90% {
+	color: #897d9b;
+}
+
+15%,85% {
+	color: #9b7d99;
+}
+
+20%,80% {
+	color: #9b837d;
+}
+
+25%,75% {
+	color: #999b7d;
+}
+
+30%,70% {
+	color: #7d9b83;
+}
+
+35%,65% {
+	color: #7d909b;
+}
+
+40%,60% {
+	color: #837d9b;
+}
+ 50% {
+   color: #9b7d95;
+ }
+
+}
+
+@-o-keyframes "anione" {
+	0%,100% {
+	color: #111;
+}
+
+5%,95% {
+	color: #3b3643;
+}
+
+10%,90% {
+	color: #897d9b;
+}
+
+15%,85% {
+	color: #9b7d99;
+}
+
+20%,80% {
+	color: #9b837d;
+}
+
+25%,75% {
+	color: #999b7d;
+}
+
+30%,70% {
+	color: #7d9b83;
+}
+
+35%,65% {
+	color: #7d909b;
+}
+
+40%,60% {
+	color: #837d9b;
+}
+ 50% {
+   color: #9b7d95;
+ }
+
+}
+
+p.two {
+	-webkit-animation: anione 30s linear 1s infinite;
+	-moz-animation: anione 30s linear 1s infinite;
+	-ms-animation: anione 30s linear 1s infinite;
+	-o-animation: anione 30s linear 1s infinite;
+	animation: anione 30s linear 1s infinite;
+}
+
+p.three {
+	-webkit-animation: anione 30s linear 2s infinite;
+	-moz-animation: anione 30s linear 2s infinite;
+	-ms-animation: anione 30s linear 2s infinite;
+	-o-animation: anione 30s linear 2s infinite;
+	animation: anione 30s linear 2s infinite;
+}
+
+p.four {
+	-webkit-animation: anione 30s linear 3s infinite;
+	-moz-animation: anione 30s linear 3s infinite;
+	-ms-animation: anione 30s linear 3s infinite;
+	-o-animation: anione 30s linear 3s infinite;
+	animation: anione 30s linear 3s infinite;
+}
+
+p.five {
+	-webkit-animation: anione 30s linear 4s infinite;
+	-moz-animation: anione 30s linear 4s infinite;
+	-ms-animation: anione 30s linear 4s infinite;
+	-o-animation: anione 30s linear 4s infinite;
+	animation: anione 30s linear 4s infinite;
+}
