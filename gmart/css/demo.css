@@ -78,7 +78,7 @@ a:hover {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-wrap: wrap;
-	-ms-flex-wrap: wrap; 
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -93,7 +93,7 @@ a:hover {
 	font-size: 50%;
 	display: block;
 	color: #4D4D5A;
-} 
+}
 
 .bp-header > span {
 	width: 100%;
@@ -156,7 +156,10 @@ a:hover {
 .bp-header nav a > span {
 	display: none;
 }
-
+.logo {
+	height: 300px;
+	width: 380px;
+}
 .bp-header nav a:hover:before {
 	content: attr(data-info);
 	color: #595A5F;

@@ -102,18 +102,6 @@ body {
 	top: 200%;
 }
 
-.button--close {
-	font-size: 1.55em;
-	position: absolute;
-	top: 30px;
-	right: 30px;
-	margin: 0;
-	opacity: 0;
-	color: #50505a;
-	-webkit-transition: opacity 0.3s;
-	transition: opacity 0.3s;
-}
-
 .content--open .button--close {
 	opacity: 1;
 }
@@ -155,36 +143,6 @@ body {
 
 .zoomer__area:focus {
 	outline: none;
-}
-
-.zoomer__area--size-1 {
-	/* Apple Watch */
-	width: 96px;
-	height: 118px;
-}
-
-.zoomer__area--size-2 {
-	/* iPhone */
-	width: 112px;
-	height: 198px;
-}
-
-.zoomer__area--size-3 {
-	/* MacBook */
-	width: 315px;
-	height: 200px;
-}
-
-.zoomer__area--size-4 {
-	/* iPad */
-	width: 150px;
-	height: 200px;
-}
-
-.zoomer__area--size-5 {
-	/* iMac */
-	width: 315px;
-	height: 189px;
 }
 
 .preview {
