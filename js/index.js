@@ -36,7 +36,7 @@ function nPart() {
 var pull = .03;
 
 function txt() {
-    var t = "Rishi Giri".split("").join(String.fromCharCode(0x2004));
+    var t = "I'M TAKING A POWER NAP".split("").join(String.fromCharCode(0x2004));
     $.font = "3.5em Philosopher";
     $.fillStyle = 'hsla(0,0%,30%,1)';
     $.fillText(t, (c.width - $.measureText(t).width) * 0.5, c.height * 0.5);
