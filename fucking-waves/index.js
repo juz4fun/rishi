@@ -11,6 +11,7 @@ c.height = img.height;
 var tic, sine, sineNormalized,
     start = Date.now();
 
+// controllers
 var params = {
     AMP: 20,
     FREQ: 0.03,
