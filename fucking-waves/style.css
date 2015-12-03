@@ -1,0 +1,32 @@
+body {
+  background: black;
+  color: #999;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+a {
+  color: #ff7766;
+}
+
+img {
+  display: none;
+}
+
+nav {
+  color: #ff7766;
+  font-size: 0.8em;
+}
+nav span {
+  display: inline-block;
+  text-align: right;
+  width: 100px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+nav input {
+  vertical-align: middle;
+}
