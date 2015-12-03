@@ -9,7 +9,9 @@ function DemoScene() {
     this.init = function() {
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
         camera.position.z = 1000;
+
         scene = new THREE.Scene();
+
         geometry = new THREE.CubeGeometry(150, 150, 150);
         material = new THREE.MeshPhongMaterial({
             color: 0x33FFFF,
@@ -38,6 +40,7 @@ function DemoScene() {
     this.mousemove = function(e) {
         mouseX = e.pageX;
         mouseY = e.pageY;
+
     }
     this.animate = function() {
         requestAnimationFrame(self.animate);
