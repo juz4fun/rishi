@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Merry Christmas</title>
+        <link rel="stylesheet" href="css/christmas.css">
+  </head>
+  <body>
+<div id="keyboard">
+  <div id="top" class="row">
+    <div id="q" class="key">Q</div>
+    <div id="w" class="key">W</div>
+    <div id="e" class="key santa">E</div>
+    <div id="r" class="key santa">R</div>
+    <div id="t" class="key santa">T</div>
+    <div id="y" class="key santa">Y</div>
+    <div id="u" class="key">U</div>
+    <div id="i" class="key santa">I</div>
+    <div id="o" class="key">O</div>
+    <div id="p" class="key">P</div>
+  </div>
+  <div id="mid" class="row">
+    <div id="a" class="key santa">A</div>
+    <div id="s" class="key santa">S</div>
+    <div id="d" class="key">D</div>
+    <div id="f" class="key">F</div>
+    <div id="g" class="key">G</div>
+    <div id="h" class="key santa">H</div>
+    <div id="j" class="key">J</div>
+    <div id="k" class="key">K</div>
+    <div id="l" class="key">L</div>
+  </div>
+  <div id="bot" class="row">
+    <div id="z" class="key">Z</div>
+    <div id="x" class="key">X</div>
+    <div id="c" class="key santa">C</div>
+    <div id="v" class="key">V</div>
+    <div id="b" class="key">B</div>
+    <div id="n" class="key">N</div>
+    <div id="m" class="key santa">M</div>
+  </div>
+</div>
+    <script src='js/matter.min.js'></script>
+<script src='js/jquery.min.js'></script>
+
+        <script src="js/merry.js"></script>
+
+    
+    
+    
+  </body>
+</html>
